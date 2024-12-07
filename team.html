@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/dist/css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e29fb6875.js" crossorigin="anonymous"></script>
+    <script src="dist/js/team.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <i class="fa-regular fa-hospital fa-beat"></i>
+                </div>
+
+                <nav class="navbar__menu col-auto">
+                    <ul class="d-flex flex-column flex-md-row gap-3">
+                        <li class="navbar__menu__item"><a href="/home.html">Home</a></li>
+                        <li class="navbar__menu__item"><a href="/team.html">Equipo médico</a></li>
+                        <li class="navbar__menu__item"><a href="/contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="col-auto">
+                    <a href="#"><button class="navbar__button">Reservar cita</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main container">
+        <section class="filters mb-4">
+            <h3>Filtrar por:</h3>
+            <label>
+                <input type="checkbox" class="filter-specialty" value="Cardiología"> Cardiología
+            </label>
+            <label>
+                <input type="checkbox" class="filter-specialty" value="Neurología"> Neurología
+            </label>
+            <label>
+                <input type="checkbox" class="filter-specialty" value="Pediatría"> Pediatría
+            </label>
+            <label>
+                <input type="checkbox" class="filter-specialty" value="Oncología"> Oncología
+            </label>
+            <label>
+                <input type="checkbox" class="filter-years" value="5"> Más de 5 años de experiencia
+            </label>
+        </section>
+    
+    
+        <section class="team__members">
+        
+        </section>
+
+        <h2>Detalles del Doctor</h2>
+
+<select id="doctorSelector" hidden>
+    <option value="">Seleccionar Doctor</option>
+</select>
+
+<div class="doctor-details" id="doctorDetails">
+
+    <p id="doctorName"></p>
+    <p id="doctorSpecialty"></p>
+    <p id="doctorExperience"></p>
+    <p id="doctorProfile"></p>
+    <p id="doctorAvailableHours"></p>
+    <p id="doctorContact"></p>
+</div>
+
+    </main>
+
+
+
+    <footer class="footer container">
+        <div class="row">
+            <div class="footer__section footer__section--contact col-md-6 ">
+                <h4 class="footer__title">Contacto</h4>
+                <p class="footer__text">Dirección: Calle de la Salud, 123, Ciudad Médica</p>
+                <p class="footer__text">Teléfono: (123) 456-7890</p>
+                <p class="footer__text">Email: contacto@clinicamedica.com</p>
+            </div>
+            <div class="footer__section footer__section--social col-md-6 ">
+                <h4 class="footer__title">Síguenos</h4>
+                <ul class="footer__social-links">
+                    <li class="footer__social-item"><a href="https://facebook.com/clinicamedica"
+                            target="_blank">Facebook</a></li>
+                    <li class="footer__social-item"><a href="https://twitter.com/clinicamedica"
+                            target="_blank">Twitter</a></li>
+                    <li class="footer__social-item"><a href="https://instagram.com/clinicamedica"
+                            target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer__section footer__section--hours col-md-6 ">
+                <h4 class="footer__title">Horario de Atención</h4>
+                <p class="footer__text">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                <p class="footer__text">Sábado: 9:00 AM - 2:00 PM</p>
+                <p class="footer__text">Domingo: Cerrado</p>
+            </div>
+            <div class="footer__section footer__section--copyright col-md-6 ">
+                <p class="footer__text">&copy; 2024 Clínica Médica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

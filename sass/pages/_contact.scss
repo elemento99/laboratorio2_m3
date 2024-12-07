@@ -1,0 +1,76 @@
+.main {
+  padding: 2rem 1rem;
+  background-color: $background-color;
+
+  &__team-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+  }
+}
+
+.presentation {
+  background-color: $white-color;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+
+  &__intro {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    color: $primary-color;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: $text-color;
+    line-height: 1.6;
+  }
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  .team__member {
+    .card {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      .card-img-top {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      .card-body {
+        text-align: center;
+      }
+
+      .card-title {
+        font-size: 1.5rem;
+        color: $primary-color;
+      }
+
+      .card-text {
+        font-size: 1rem;
+        color: $text-color;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

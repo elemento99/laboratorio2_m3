@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Orientada a Objetos en JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .doctor-info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Información de Doctores</h1>
+    <div id="doctors-container"></div>
+
+    <script>
+        // Clase base Doctor
+        class Doctor {
+            constructor(name, specialty, experience) {
+                this.name = name;
+                this.specialty = specialty;
+                this._experience = experience; // propiedad privada (encapsulada)
+                this.patientsAttended = 0; // número de pacientes atendidos
+            }
+
+            // Getter y setter para la propiedad 'experience'
+            get experience() {
+                return this._experience;
+            }
+
+            set experience(value) {
+                if (value >= 0) {
+                    this._experience = value;
+                } else {
+                    console.log('La experiencia no puede ser negativa');
+                }
+            }
+
+            // Método para mostrar información del doctor
+            showInfo() {
+                return `${this.name}, Especialidad: ${this.specialty}, Años de experiencia: ${this.experience}`;
+            }
+
+            // Método para calcular el total de pacientes atendidos
+            calculatePatients(patients) {
+                this.patientsAttended += patients;
+            }
+        }
+
+        // Subclase Cirujano que extiende de Doctor
+        class Cirujano extends Doctor {
+            constructor(name, specialty, experience, surgeriesPerformed) {
+                super(name, specialty, experience);
+                this.surgeriesPerformed = surgeriesPerformed; // número de operaciones realizadas
+            }
+
+            // Sobrescribir el método de cálculo de pacientes atendidos
+            calculatePatients(operations) {
+                this.surgeriesPerformed += operations;
+            }
+
+            // Sobrescribir el método showInfo para incluir operaciones realizadas
+            showInfo() {
+                return `${super.showInfo()}, Operaciones realizadas: ${this.surgeriesPerformed}`;
+            }
+        }
+
+        // Función para cargar los datos del archivo JSON y mostrar los doctores
+        async function loadDoctors() {
+            try {
+                const response = await fetch("dist/assets/doctors.json");
+                const data = await response.json();
+                const doctorsContainer = document.getElementById("doctors-container");
+
+                // Crear instancias de los doctores y mostrarlas
+                data.doctors.forEach(doctorData => {
+                    let doctor;
+
+                    // Si el doctor es un cirujano, crear una instancia de Cirujano
+                    if (doctorData.specialty === "Cardiología") {
+                        doctor = new Cirujano(doctorData.name, doctorData.specialty, doctorData.experience, 0);
+                    } else {
+                        doctor = new Doctor(doctorData.name, doctorData.specialty, doctorData.experience);
+                    }
+
+                    // Calcular los pacientes atendidos (simulando operaciones o consultas)
+                    doctor.calculatePatients(5); // Ejemplo de número de pacientes
+
+                    // Mostrar la información del doctor
+                    const doctorElement = document.createElement("div");
+                    doctorElement.classList.add("doctor-info");
+                    doctorElement.innerHTML = `<strong>${doctor.showInfo()}</strong><br>Perfil: ${doctorData.profile}<br>Horas de disponibilidad: ${doctorData.availableHours}<br>Contacto: ${doctorData.contact}<hr>`;
+                    doctorsContainer.appendChild(doctorElement);
+                });
+            } catch (error) {
+                console.error("Error al cargar los datos de los doctores:", error);
+            }
+        }
+
+        // Cargar la información de los doctores cuando se cargue la página
+        loadDoctors();
+    </script>
+</body>
+</html>

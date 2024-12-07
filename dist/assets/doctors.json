@@ -1,0 +1,88 @@
+{
+    "doctors": [
+      {
+        "name": "Dr. Juan Pérez",
+        "specialty": "Cardiología",
+        "experience": 10,
+        "profile": "Experto en enfermedades del corazón.",
+        "availableHours": "Lunes a Viernes 9am - 5pm",
+        "contact": "juan.perez@hospital.com"
+      },
+      {
+        "name": "Dr. Ana Gómez",
+        "specialty": "Neurología",
+        "experience": 8,
+        "profile": "Especialista en trastornos neurológicos.",
+        "availableHours": "Lunes a Jueves 10am - 4pm",
+        "contact": "ana.gomez@hospital.com"
+      },
+      { 
+          "name": "Dr. Carlos López", 
+          "specialty": "Pediatría", 
+          "experience": 6, 
+          "profile": "Enfoque en la salud infantil.", 
+          "availableHours": "Lunes, Miércoles, y Viernes, 8:00 AM - 3:00 PM", 
+          "contact": "carlos.lopez@hospital.com"
+      },
+      { 
+          "name": "Dr. María Rodríguez", 
+          "specialty": "Oncología", 
+          "experience": 7, 
+          "profile": "En tratamientos de cáncer y cuidados paliativos.", 
+          "availableHours": "Lunes a Viernes, 9:00 AM - 5:00 PM", 
+          "contact": "maria.rodriguez@hospital.com"
+      },
+      { 
+          "name": "Dr. Sofía Martínez", 
+          "specialty": "Cardiología", 
+          "experience": 12, 
+          "profile": "Amplia experiencia en cirugía cardiovascular.", 
+          "availableHours": "Martes a Viernes, 8:00 AM - 4:00 PM", 
+          "contact": "sofia.martinez@hospital.com"
+      },
+      { 
+          "name": "Dr. Pedro García", 
+          "specialty": "Neurología", 
+          "experience": 4, 
+          "profile": "Especialista en neuropsiquiatría.", 
+          "availableHours": "Lunes a Miércoles, 10:00 AM - 2:00 PM", 
+          "contact": "pedro.garcia@hospital.com"
+      },
+      { 
+          "name": "Dra. Laura Fernández", 
+          "specialty": "Pediatría", 
+          "experience": 15, 
+          "profile": "Médico pediatra con gran trayectoria.", 
+          "availableHours": "Lunes a Viernes, 8:00 AM - 5:00 PM", 
+          "contact": "laura.fernandez@hospital.com"
+      },
+      { 
+          "name": "Dr. Miguel Torres", 
+          "specialty": "Oncología", 
+          "experience": 3, 
+          "profile": "Investigador en tratamientos oncológicos.", 
+          "availableHours": "Lunes a Jueves, 9:00 AM - 4:00 PM", 
+          "contact": "miguel.torres@hospital.com"
+      },
+      { 
+          "name": "Dra. Elena Castro", 
+          "specialty": "Cardiología", 
+          "experience": 9, 
+          "profile": "Experta en rehabilitación cardíaca.", 
+          "availableHours": "Martes a Viernes, 7:00 AM - 3:00 PM", 
+          "contact": "elena.castro@hospital.com"
+      },
+      { 
+          "name": "Dr. Luis Díaz", 
+          "specialty": "Neurología", 
+          "experience": 11, 
+          "profile": "Pionero en técnicas avanzadas de neurocirugía.", 
+          "availableHours": "Lunes, Miércoles, y Viernes, 8:00 AM - 4:00 PM", 
+          "contact": "luis.diaz@hospital.com"
+      }
+    ]
+  }
+  
+
+
+

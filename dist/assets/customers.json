@@ -1,0 +1,113 @@
+{
+    "customers": [
+      {
+        "name": "Juan Martínez",
+        "age": 45,
+        "contact": "juan.martinez@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Juan Pérez", "date": "2024-12-08", "price": 500, "waitTime": 20 },
+          { "doctor": "Dr. Ana Gómez", "date": "2024-12-10", "price": 600, "waitTime": 25 }
+        ]
+      },
+      {
+        "name": "María López",
+        "age": 32,
+        "contact": "maria.lopez@gmail.com",
+        "appointments": [
+          { "doctor": "Dra. Laura Fernández", "date": "2024-12-09", "price": 400, "waitTime": 15 },
+          { "doctor": "Dr. Carlos López", "date": "2024-12-12", "price": 450, "waitTime": 30 }
+        ]
+      },
+      {
+        "name": "Carlos Fernández",
+        "age": 29,
+        "contact": "carlos.fernandez@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. María Rodríguez", "date": "2024-12-11", "price": 700, "waitTime": 35 },
+          { "doctor": "Dr. Luis Díaz", "date": "2024-12-13", "price": 550, "waitTime": 40 }
+        ]
+      },
+      {
+        "name": "Ana Torres",
+        "age": 37,
+        "contact": "ana.torres@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Miguel Torres", "date": "2024-12-10", "price": 800, "waitTime": 45 },
+          { "doctor": "Dr. Pedro García", "date": "2024-12-14", "price": 600, "waitTime": 25 }
+        ]
+      },
+      {
+        "name": "Luis Gómez",
+        "age": 50,
+        "contact": "luis.gomez@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Sofía Martínez", "date": "2024-12-09", "price": 1000, "waitTime": 50 },
+          { "doctor": "Dr. Juan Pérez", "date": "2024-12-12", "price": 750, "waitTime": 20 }
+        ]
+      },
+      {
+        "name": "Elena Sánchez",
+        "age": 42,
+        "contact": "elena.sanchez@gmail.com",
+        "appointments": [
+          { "doctor": "Dra. Elena Castro", "date": "2024-12-08", "price": 900, "waitTime": 40 },
+          { "doctor": "Dr. Sofía Martínez", "date": "2024-12-10", "price": 950, "waitTime": 30 }
+        ]
+      },
+      {
+        "name": "Mario Ruiz",
+        "age": 35,
+        "contact": "mario.ruiz@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Miguel Torres", "date": "2024-12-08", "price": 700, "waitTime": 25 },
+          { "doctor": "Dr. Ana Gómez", "date": "2024-12-11", "price": 650, "waitTime": 35 }
+        ]
+      },
+      {
+        "name": "Lucía Vega",
+        "age": 28,
+        "contact": "lucia.vega@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Carlos López", "date": "2024-12-12", "price": 450, "waitTime": 15 },
+          { "doctor": "Dra. Laura Fernández", "date": "2024-12-14", "price": 400, "waitTime": 20 }
+        ]
+      },
+      {
+        "name": "Pedro Álvarez",
+        "age": 60,
+        "contact": "pedro.alvarez@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Juan Pérez", "date": "2024-12-09", "price": 600, "waitTime": 25 },
+          { "doctor": "Dr. Luis Díaz", "date": "2024-12-13", "price": 550, "waitTime": 40 }
+        ]
+      },
+      {
+        "name": "Sofía Herrera",
+        "age": 31,
+        "contact": "sofia.herrera@gmail.com",
+        "appointments": [
+          { "doctor": "Dra. Elena Castro", "date": "2024-12-10", "price": 800, "waitTime": 35 },
+          { "doctor": "Dr. María Rodríguez", "date": "2024-12-12", "price": 700, "waitTime": 30 }
+        ]
+      },
+      {
+        "name": "Diego Vargas",
+        "age": 48,
+        "contact": "diego.vargas@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Sofía Martínez", "date": "2024-12-09", "price": 1200, "waitTime": 50 },
+          { "doctor": "Dr. Pedro García", "date": "2024-12-13", "price": 650, "waitTime": 30 }
+        ]
+      },
+      {
+        "name": "Clara Méndez",
+        "age": 40,
+        "contact": "clara.mendez@gmail.com",
+        "appointments": [
+          { "doctor": "Dr. Miguel Torres", "date": "2024-12-08", "price": 900, "waitTime": 40 },
+          { "doctor": "Dr. Carlos López", "date": "2024-12-14", "price": 450, "waitTime": 20 }
+        ]
+      }
+    ]
+  }
+  

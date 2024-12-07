@@ -1,0 +1,52 @@
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Arial', sans-serif;
+
+$secondary-color: #555;
+
+
+body {
+  font-family: $secondary-font;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font;
+  font-weight: 700;
+
+  margin-bottom: 0.5rem;
+}
+
+
+.montserrat-bold {
+  font-family: $primary-font;
+  font-weight: 700;
+}
+
+.montserrat-regular {
+  font-family: $primary-font;
+  font-weight: 400;
+}
+
+.montserrat-light {
+  font-family: $primary-font;
+  font-weight: 300;
+}
+
+.montserrat-thin {
+  font-family: $primary-font;
+  font-weight: 100;
+}
+
+
+p {
+  font-family: $secondary-font;
+  line-height: 1.6;
+}

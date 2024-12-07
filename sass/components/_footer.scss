@@ -1,0 +1,46 @@
+.footer {
+  background-color: $secondary-color;
+  color: $white-color;
+  padding: 2rem;
+  text-align: center;
+
+  &__section {
+    margin-bottom: 1.5rem;
+
+    &--contact,
+    &--social,
+    &--hours {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: $primary-color;
+  }
+
+  &__text {
+    font-size: 1rem;
+    margin: 0.3rem 0;
+    color: $text-color;
+  }
+
+  &__social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &__social-item a {
+    color: $white-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $third-color;
+    }
+  }
+}

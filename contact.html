@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/dist/css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e29fb6875.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <i class="fa-regular fa-hospital fa-beat"></i>
+                </div>
+
+                <nav class="navbar__menu col-auto">
+                    <ul class="d-flex flex-column flex-md-row gap-3">
+                        <li class="navbar__menu__item"><a href="/home.html">Home</a></li>
+                        <li class="navbar__menu__item"><a href="/team.html">Equipo médico</a></li>
+                        <li class="navbar__menu__item"><a href="/contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <div class="col-auto">
+                    <a href="#"><button class="navbar__button">Reservar cita</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main container">
+        <section class="main__contact row">
+        
+            <div class="main__form col-md-6">
+                <h3>Contacto</h3>
+                <form id="contactForm">
+                    <div class="main__form-group mb-3">
+                        <label for="name" class="main__label form-label">Nombre:</label>
+                        <input type="text" id="name" name="name" class="main__input form-control" required>
+                    </div>
+                    <div class="main__form-group mb-3">
+                        <label for="email" class="main__label form-label">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="main__input form-control" required>
+                    </div>
+                    <div class="main__form-group mb-3">
+                        <label for="phone" class="main__label form-label">Teléfono:</label>
+                        <input type="text" id="phone" name="phone" class="main__input form-control" required>
+                    </div>
+                    <div class="main__form-group mb-3">
+                        <label for="message" class="main__label form-label">Mensaje:</label>
+                        <textarea id="message" name="message" class="main__textarea form-control" required></textarea>
+                    </div>
+                    <button type="submit" id="submitContactForm" class="main__button btn btn-primary w-100">Enviar</button>
+                </form>
+                
+                <div id="notification-container"></div>
+                
+            </div>
+
+
+<div class="main__form col-md-6">
+    <h3>Agendar Cita</h3>
+    <form id="appointmentForm"> 
+        <div class="main__form-group mb-3">
+            <label for="appointmentName" class="main__label form-label">Nombre del paciente:</label>
+            <input type="text" id="appointmentName" name="appointmentName" class="main__input form-control" required>
+        </div>
+        <div class="main__form-group mb-3">
+            <label for="appointmentDate" class="main__label form-label">Fecha de la cita:</label>
+            <input type="date" id="appointment-date" name="appointmentDate" class="main__input form-control" required>
+        </div>
+        <div class="main__form-group mb-3">
+            <label for="appointmentTime" class="main__label form-label">Hora de la cita:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" class="main__input form-control" required>
+        </div>
+        <div class="main__form-group mb-3">
+            <label for="doctor" class="main__label form-label">Doctor:</label>
+            <select id="doctor" name="doctor" class="main__input form-control" required>
+                <option value="">Seleccione un doctor</option>
+            
+            </select>
+        </div>
+        <button type="submit" id="scheduleAppointmentButton" class="main__button btn btn-primary w-100">Agendar cita</button>
+    </form>
+</div>
+
+
+        <!-- Sección para ver los pacientes y las citas agendadas -->
+        <section id="appointments-section">
+            <h3>Citas Agendadas</h3>
+            <div id="appointments-list">
+                <!-- Aquí se agregarán las citas -->
+            </div>
+        </section>
+
+        </section>
+            <section class="main__map col-md-6">
+                <h3 class="main__map-title">Mapa de ubicación</h3>
+                <iframe class="main__map-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.266408648995!2d-70.62960682531605!3d-32.84929146697638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96881b322efafc75%3A0xc816bbe79fc11df3!2sCalle%20Larga%2C%20Valpara%C3%ADso!5e1!3m2!1ses!2scl!4v1730049335407!5m2!1ses!2scl"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    alt="Mapa de ubicación de la clínica en Valparaíso, Chile"></iframe>
+            </section>
+        </section>
+
+
+
+  
+      
+        
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__section footer__section--contact">
+            <h4 class="footer__title">Contacto</h4>
+            <p class="footer__text">Dirección: Calle de la Salud, 123, Ciudad Médica</p>
+            <p class="footer__text">Teléfono: (123) 456-7890</p>
+            <p class="footer__text">Email: contacto@clinicamedica.com</p>
+        </div>
+        <div class="footer__section footer__section--social">
+            <h4 class="footer__title">Síguenos</h4>
+            <ul class="footer__social-links">
+                <li class="footer__social-item"><a href="https://facebook.com/clinicamedica"
+                        target="_blank">Facebook</a></li>
+                <li class="footer__social-item"><a href="https://twitter.com/clinicamedica" target="_blank">Twitter</a>
+                </li>
+                <li class="footer__social-item"><a href="https://instagram.com/clinicamedica"
+                        target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer__section footer__section--hours">
+            <h4 class="footer__title">Horario de Atención</h4>
+            <p class="footer__text">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+            <p class="footer__text">Sábado: 9:00 AM - 2:00 PM</p>
+            <p class="footer__text">Domingo: Cerrado</p>
+        </div>
+        <div class="footer__section footer__section--copyright">
+            <p class="footer__text">&copy; 2024 Clínica Médica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="/dist/js/contact.js"></script>
+</body>
+
+</html>

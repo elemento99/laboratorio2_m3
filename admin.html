@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración Hospital</title>
+</head>
+<body>
+    <h1>Administración de Hospital</h1>
+
+    <!-- Mostrar lista de doctores -->
+    <h2>Doctores</h2>
+    <ul id="doctorList"></ul>
+
+    <button onclick="addDoctor()">Agregar Doctor</button>
+    <button onclick="removeDoctor()">Eliminar Doctor</button>
+    <button onclick="searchDoctor()">Buscar Doctor</button>
+
+    <!-- Manejo de citas con Pila -->
+    <h2>Citas - Pila</h2>
+    <ul id="stackList"></ul>
+    <button onclick="addToStack()">Agregar Cita</button>
+    <button onclick="removeFromStack()">Eliminar Cita</button>
+
+    <!-- Manejo de pacientes con Cola -->
+    <h2>Pacientes - Cola</h2>
+    <ul id="queueList"></ul>
+    <button onclick="addToQueue()">Agregar Paciente</button>
+    <button onclick="removeFromQueue()">Atender Paciente</button>
+    <button onclick="sortDoctorsByExperience()">Ordenar Doctores por Experiencia</button>
+<button onclick="searchDoctor()">Buscar Doctor</button>
+
+
+    <script src="/dist/js/admin.js"></script>
+</body>
+</html>

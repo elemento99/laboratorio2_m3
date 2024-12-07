@@ -1,0 +1,26 @@
+.navbar {
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 1rem;
+
+    &__item a {
+      color: $text-color;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+      font-family: $primary-font;
+      font-weight: 500;
+      font-size: 1.1rem;
+
+      &:hover {
+        color: $third-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "services": [
+      {
+        "name": "Consulta General",
+        "description": "Examen general de salud y diagnóstico.",
+        "price": 50
+      },
+      {
+        "name": "Cirugía Cardiovascular",
+        "description": "Procedimientos quirúrgicos del corazón.",
+        "price": 500
+      },
+      {
+        "name": "Neuropsiquiatría",
+        "description": "Tratamientos para trastornos neurológicos y psiquiátricos.",
+        "price": 150
+      },
+      {
+        "name": "Pediatría",
+        "description": "Atención médica para niños y adolescentes.",
+        "price": 75
+      },
+      {
+        "name": "Oncología",
+        "description": "Tratamientos para pacientes con cáncer.",
+        "price": 300
+      },
+      {
+        "name": "Rehabilitación Cardíaca",
+        "description": "Recuperación post-quirúrgica y manejo de enfermedades cardíacas.",
+        "price": 120
+      }
+    ]
+  }
+  

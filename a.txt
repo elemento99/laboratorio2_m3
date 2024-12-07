@@ -1,0 +1,46 @@
+sass/                    # Carpeta donde estará todo nuestro SASS
+|
+|– base/                 # Carpeta con los estilos que compartirán todas las páginas.
+|   |– _reset.sass       # Reset/normalize
+|   |– _typography.sass  # Fuentes/tipografías
+|   ...                  # Etc…
+|
+|– components/           # Carpeta de componentes
+|   |– _buttons.sass     # Botones
+|   |– _carousel.sass    # Carouseles
+|   |– _modal.sass       # Modales
+|   |– _dropdown.sass    # Desplegables
+|   ...                  # Etc…
+|
+|– layout/               # Carpeta con los bloques
+|   |– _navigation.sass  # Navegadores/Menús
+|   |– _grid.sass        # Ayudas para maquetación
+|   |– _header.sass      # Cabecera
+|   |– _footer.sass      # Pie
+|   |– _sidebar.sass     # Menú lateral
+|   |– _forms.sass       # Formularios
+|   ...                  # Etc…
+|
+|– pages/                # Carpeta con los estilos propios de cada página
+|   |– _home.sass        # Página de inicio
+|   |– _contact.sass     # Página de contacto
+|   ...                  # Etc…
+|
+|– themes/               # Carpeta con los temas
+|   |– _theme.sass       # Tema principal
+|   |– _admin.sass       # Tema de administración
+|   ...                  # Etc…
+|
+|– utils/                # Carpeta con utilidades y ayudas
+|   |– _variables.sass   # Variables
+|   |– _functions.sass   # Funciones SASS
+|   |– _mixins.sass      # Mixins de SASS
+|   |– _helpers.sass     # Clases de ayuda
+|
+|– vendors/              # Carpeta con el CSS externo a nosotros
+|   |– _bootstrap.sass   # Bootstrap
+|   |– _jquery-ui.sass   # jQuery UI
+|   ...                  # Etc…
+|
+|
+`– main.sass             # El encargado de importar todos los SASS
