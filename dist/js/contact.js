@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const notificationContainer = document.getElementById("notification-container");
     const appointmentsList = document.getElementById("appointments-list");
 
-    // Función para generar datos aleatorios
+   
     function getRandomPatientData() {
         const names = ["Juan Pérez", "Ana Gómez", "Carlos Martínez", "Laura López", "Pedro Sánchez"];
         const phones = ["123-456-7890", "987-654-3210", "555-123-4567", "666-987-6543", "777-555-9876"];
@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
         return { name, phone, message };
     }
 
-    // Listener para capturar el envío del formulario de contacto
+   
     contactForm.addEventListener("submit", async function(e) {
         e.preventDefault();
 
-        // Mostrar un mensaje de confirmación
+       
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
@@ -35,10 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const confirmationMessage = `Gracias, ${name}. Hemos recibido tu mensaje. Nos pondremos en contacto contigo en la dirección: ${email}.`;
         
-        // Mostrar el mensaje de confirmación en la página
+ 
         notificationContainer.innerHTML = `<div class="alert alert-success">${confirmationMessage}</div>`;
 
-        // Simular la llegada de un nuevo paciente con un evento personalizado
+      
         const patientEvent = new CustomEvent("newPatient", {
             detail: {
                 name: name,
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.dispatchEvent(patientEvent);
     });
 
-    // Escuchar el evento personalizado y mostrar una notificación
+    
     document.addEventListener("newPatient", function(e) {
         const patient = e.detail;
         const notification = document.createElement("div");
@@ -58,16 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
         notification.textContent = `Nuevo paciente: ${patient.name} (Tel: ${patient.phone}). Mensaje: ${patient.message}`;
         notificationContainer.appendChild(notification);
 
-        // Eliminar la notificación después de 10 segundos
+      
         setTimeout(() => {
             notification.remove();
         }, 10000);
     });
 
-    // Función async/await para simular una llamada a una API REST
+   
     async function fetchDoctors() {
         try {
-            const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=5");  // Usamos PokeAPI para simular la llamada
+            const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=5");  
             const data = await response.json();
             
             const doctors = data.results.map(pokemon => ({
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 specialty: "Especialista en Pokémon"
             }));
 
-            console.log(doctors); // Verificación de los doctores recibidos
+            console.log(doctors); 
 
             const doctorSelect = document.getElementById("doctor");
             doctorSelect.innerHTML = '<option value="">Seleccione un doctor</option>';
@@ -92,10 +92,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Llamar a la función para cargar los doctores al cargar la página
+ 
     fetchDoctors();
 
-    // Función para imprimir las citas en el DOM
     function displayAppointment(appointment) {
         const appointmentElement = document.createElement("div");
         appointmentElement.classList.add("appointment", "alert", "alert-secondary");
@@ -108,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
         appointmentsList.appendChild(appointmentElement);
     }
 
-    // Listener para capturar el envío del formulario de agendar cita
     appointmentForm.addEventListener("submit", function(e) {
         e.preventDefault();
 
@@ -132,7 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
         appointmentForm.reset();
     });
 
-    // Simular la llegada de nuevos pacientes automáticamente con datos aleatorios
     function simulateNewPatientArrival() {
         const simulatedPatient = getRandomPatientData();
         const patientEvent = new CustomEvent("newPatient", {

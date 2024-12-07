@@ -80,7 +80,7 @@
         return;
       }
       const patient = customers[patientIndex];
-      const totalHours = patient.appointments.reduce((sum, appointment) => sum + appointment.waitTime, 0); // Total de horas basadas en el tiempo de espera
+      const totalHours = patient.appointments.reduce((sum, appointment) => sum + appointment.waitTime, 0); 
       const originalCost = patient.appointments.reduce((sum, appointment) => sum + appointment.price, 0);
       const finalCost = applyDiscounts(originalCost, calculateDiscountByHours(totalHours));
       document.getElementById('discountResult').innerText = `Costo con descuento: $${finalCost.toFixed(2)}`;
